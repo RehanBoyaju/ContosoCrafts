@@ -1,0 +1,202 @@
+/* General Styles */
+html {
+    font-size: 14px;
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px; /* Margin bottom by footer height */
+    font-family: 'Nunito', sans-serif;
+}
+
+h1, p, ul {
+    font-family: 'Nunito', sans-serif;
+}
+
+a {
+    color: #0366d6;
+}
+
+    /* Navbar Styles */
+    a.navbar-brand {
+        white-space: normal;
+        font-family: 'Yellowtail', cursive;
+        font-size: xx-large;
+        text-align: center;
+        word-break: break-all;
+    }
+
+.bg-navbar {
+    background: linear-gradient(110deg, #e9a8a6 60%, #252152 60%);
+}
+
+/* Button Styles */
+.btn-primary {
+
+    color: #fff;
+    background-color: #252152;
+    border-color: #252152;
+}
+
+    .btn-primary:hover {
+        color: #fff;
+        background-color: #e9a8a6;
+        border-color: #e9a8a6;
+    }
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+/* Card Styles */
+.card-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+    .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(37, 33, 82, 0.12), 0 4px 8px rgba(37, 33, 82, 0.06);
+    }
+
+
+
+.card-img {
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+}
+
+.card-columns .card-img {
+    height: 330px;
+}
+
+.card-columns .card:hover .card-img {
+    opacity: 1;
+    -webkit-transform-style: preserve-3d;
+}
+
+.card-body {
+    padding: 15px;
+    background: #fbfafd;
+}
+
+.card-columns .card-body {
+    height: 100px;
+}
+
+.card-title {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+
+.card-footer {
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    background: #fbfafd;
+
+}
+
+    .card-footer .btn {
+        width: 100%; /* Make the button full width */
+        margin-top: 5px; /* Add some spacing */
+    }
+    
+
+/* Modal Styles */
+.modal .card-img {
+    height: 500px;
+    vertical-align: bottom;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Star Rating Styles */
+.fa-star {
+    cursor: pointer;
+}
+
+.checked {
+    color: orange;
+}
+
+/* Footer Styles */
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px; /* Vertically center the text */
+    font-family: 'Nunito', sans-serif;
+}
+
+.bg-footer {
+    background: linear-gradient(110deg, #252152 60%, #e9a8a6 60%);
+}
+
+/* Responsive Styles */
+/*@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+
+    .card-columns {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 767px) {
+    .card-columns {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .card-img {
+        height: 150px;
+    }
+
+    .card-columns .card-img {
+        height: 250px;
+    }
+
+    .modal .card-img {
+        height: 300px;
+    }
+}*/
+
+/* Utility Classes */
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
